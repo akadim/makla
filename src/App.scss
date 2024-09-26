@@ -1,0 +1,31 @@
+@import "./assets/styles/variables";
+@import "./assets/styles/mixins";
+
+.p__opensans {
+  font-family: $fontAlt;
+  color: $colorWhite;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@include large {
+  .p__opensans {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@include mobile {
+  .p__opensans {
+    font-size: 12px;
+  }
+}
