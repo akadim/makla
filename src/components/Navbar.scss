@@ -1,0 +1,124 @@
+@import "../assets/styles/variables";
+@import "../assets/styles/mixins";
+
+.site__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $colorBlack;
+
+  padding: 1rem 2rem;
+
+  @include mobile {
+    padding: 1rem;
+  }
+
+  &-logo {
+    color: $colorGolden;
+    font-family: $fontBase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+
+    li {
+      margin: 0 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $colorGrey;
+      }
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include mobile {
+      display: none;
+    }
+
+    a {
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: 0.5s ease;
+
+      &:hover {
+        border-bottom: 1px solid $colorGolden;
+      }
+    }
+
+    div {
+      width: 1px;
+      height: 30px;
+      background: $colorGrey;
+    }
+  }
+
+  &-mobile {
+    display: none;
+
+    @include mobile {
+      display: flex;
+    }
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &-mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $colorBlack;
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+
+    .overlay__close {
+      font-size: 27px;
+      color: $colorGolden;
+      cursor: pointer;
+
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  &-mobile-links {
+    list-style: none;
+
+    li {
+      margin: 2rem;
+      cursor: pointer;
+      color: $colorGolden;
+      font-size: 2rem;
+      text-align: center;
+      font-family: $fontBase;
+
+      &:hover {
+        color: $colorWhite;
+      }
+    }
+  }
+}
