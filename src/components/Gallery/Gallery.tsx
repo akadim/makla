@@ -23,7 +23,7 @@ const Gallery: FC = () => {
     }
   };
   return (
-    <div className="site__gallery flex__center app__bg">
+    <div className="site__gallery flex__center app__bg" id="gallery">
       <div className="site__gallery-content">
         <SubHeading title="Instagram" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>

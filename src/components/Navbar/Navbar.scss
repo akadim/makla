@@ -7,6 +7,11 @@
   justify-content: space-between;
   align-items: center;
   background: $colorBlack;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 
   padding: 1rem 2rem;
 
