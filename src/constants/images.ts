@@ -7,6 +7,7 @@ import gallery01 from "../assets/images/gallery01.jpg";
 import gallery02 from "../assets/images/gallery02.jpg";
 import gallery03 from "../assets/images/gallery03.jpg";
 import gallery04 from "../assets/images/gallery04.jpg";
+import contact from "../assets/images/contact.jpg";
 
 export default {
   spoon,
@@ -18,4 +19,5 @@ export default {
   gallery02,
   gallery03,
   gallery04,
+  contact,
 };

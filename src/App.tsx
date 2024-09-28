@@ -1,5 +1,7 @@
 import "./App.scss";
 import AboutUs from "./components/AboutUs/AboutUs";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Gallery from "./components/Gallery/Gallery";
 import Hero from "./components/Hero/Hero";
 import FoodMenu from "./components/Menu/FoodMenu";
@@ -13,6 +15,8 @@ function App() {
       <AboutUs />
       <FoodMenu />
       <Gallery />
+      <Contact />
+      <Footer />
     </>
   );
 }
