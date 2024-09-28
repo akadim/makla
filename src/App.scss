@@ -1,14 +1,12 @@
 @import "./assets/styles/variables";
 @import "./assets/styles/mixins";
 
-.p__opensans {
-  font-family: $fontAlt;
-  color: $colorWhite;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  line-height: 28px;
-  font-size: 16px;
+.section__padding {
+  padding: 4rem 6rem;
+
+  @include mobile {
+    padding: 4rem 2rem;
+  }
 }
 
 .flex__center {
@@ -17,15 +15,117 @@
   align-items: center;
 }
 
-@include large {
-  .p__opensans {
-    font-size: 30px;
-    line-height: 50px;
+.site__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+
+  &_info {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
   }
 }
 
-@include mobile {
-  .p__opensans {
-    font-size: 12px;
+.site__wrapper_img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+
+  &-reverse {
+    justify-content: flex-start;
+    margin-right: 2rem;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  @include large {
+    margin: 5rem 0 0 0;
+  }
+}
+
+.custom__button {
+  background-color: $colorCrimson;
+  color: $colorBlack;
+  font-family: $fontBase;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  @include large {
+    font-size: 37px;
+    line-height: 67px;
+  }
+}
+
+.spoon__img {
+  width: 45px;
+
+  @include large {
+    width: 80px;
+  }
+}
+
+.p__opensans {
+  font-family: $fontAlt;
+  color: $colorWhite;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+
+  @include large {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p__cormorant {
+  font-family: $fontBase;
+  color: $colorWhite;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  line-height: 29.9px;
+  font-size: 23px;
+
+  @include large {
+    font-size: 37px;
+    line-height: 67px;
+  }
+
+  @include mobile {
+    font-size: 21px;
   }
 }
