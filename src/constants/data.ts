@@ -1,23 +1,23 @@
-const foodMenu = [
+const dishes = [
   {
     title: "Cousous",
     price: "30DH",
-    tags: "Main Dish",
+    tags: "Vegetables, Meat",
   },
   {
     title: "Tuna Salad",
     price: "20DH",
-    tags: "Appetizer",
+    tags: "Tuna, Salad Dressin",
   },
   {
-    title: "Fish Tajine",
-    price: "100DH",
-    tags: "Main Dish",
+    title: "Rfissa",
+    price: "200DH",
+    tags: "Pie, Fish",
   },
   {
-    title: "Fruit salad",
-    price: "80DH",
-    tags: "Salad",
+    title: "Harira",
+    price: "30DH",
+    tags: "Soup, Tomato",
   },
   {
     title: "Pastella",
@@ -26,4 +26,32 @@ const foodMenu = [
   },
 ];
 
-export default { foodMenu };
+const desserts = [
+  {
+    title: "Fruit Salad",
+    price: "50DH",
+    tags: "Dessert",
+  },
+  {
+    title: "Mhalabiya",
+    price: "50DH",
+    tags: "Dessert",
+  },
+  {
+    title: "Orange Cake",
+    price: "100DH",
+    tags: "Dessert",
+  },
+  {
+    title: "Lemon Cake",
+    price: "100DH",
+    tags: "Dessert",
+  },
+  {
+    title: "Ghoriba",
+    price: "30DH",
+    tags: "Dessert",
+  },
+];
+
+export default { dishes, desserts };

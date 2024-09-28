@@ -1,0 +1,38 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
+
+.site__menuitem {
+  width: 100%;
+  margin: 1rem 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.site__menuitem-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site__menuitem-sub {
+  width: 100%;
+  margin-top: 0.2rem;
+}
+
+.site__menuitem-name {
+  flex: 1;
+}
+
+.site__menuitem-dash {
+  width: 90px;
+  height: 1px;
+  background: $colorGolden;
+  margin: 0 1rem;
+}
+
+.site__menuitem-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
