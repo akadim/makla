@@ -1,3 +1,5 @@
 # MAKLA
 
-A moroccan restaurant website made by React
+A Moroccan restaurant Landing Page made by React / Typescript
+
+Live Website: [Click here](http://makla.vercel.app)
